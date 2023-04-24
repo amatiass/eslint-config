@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "test": "pnpm -r run test",
     "prepare": "pnpm -r run stub",
-    "onlyPublish": "pnpm publish -r --access public",
+    "onlyPublish": "pnpm publish -r",
     "release": "bumpp -r && pnpm onlyPublish"
   },
   "devDependencies": {
@@ -20,6 +20,6 @@
     "typescript": "^5.0.2"
   },
   "publishConfig": {
-    "directory": "packages"
+    "directory": "packages/*"
   }
 }
