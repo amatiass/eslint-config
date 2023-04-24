@@ -1,0 +1,19 @@
+{
+  "name": "@amatias/eslint-config-fixture-ts",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@amatias/eslint-config-ts": "workspace:*",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3",
+    "vite": "^4.2.1"
+  },
+  "eslintConfig": {
+    "extends": "@amatias/eslint-config-ts"
+  }
+}

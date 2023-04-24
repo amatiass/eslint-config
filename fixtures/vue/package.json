@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "@amatias/eslint-config-fixture-vue",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
