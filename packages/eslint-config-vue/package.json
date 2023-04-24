@@ -1,0 +1,27 @@
+{
+  "name": "@amatias/eslint-config-vue",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Amatias <amatias@foxmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/amatiass/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@amatias/eslint-config-basic": "workspace:*",
+    "@amatias/eslint-config-ts": "workspace:*",
+    "eslint-plugin-vue": "^9.9.0",
+    "local-pkg": "^0.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
+}

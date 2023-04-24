@@ -1,0 +1,25 @@
+{
+  "name": "@amatias/eslint-config-monorepo",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.30.0",
+  "description": "",
+  "author": "Amatias <amatias@foxmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "pnpm -r run test",
+    "prepare": "pnpm -r run stub",
+    "onlyPublish": "pnpm publish -r --access public",
+    "release": "bumpp -r && pnpm onlyPublish"
+  },
+  "devDependencies": {
+    "@amatias/eslint-config-ts": "*",
+    "bumpp": "^9.0.0",
+    "eslint": "^8.36.0",
+    "rimraf": "^4.4.0",
+    "typescript": "^5.0.2"
+  },
+  "publishConfig": {
+    "directory": "packages"
+  }
+}

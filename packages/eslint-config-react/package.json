@@ -1,0 +1,32 @@
+{
+  "name": "@amatias/eslint-config-react",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Amatias <amatias@foxmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/amatiass/eslint-config",
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0"
+  },
+  "dependencies": {
+    "@amatias/eslint-config-ts": "workspace:*",
+    "@amatias/eslint-config-jsx": "workspace:*",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "react": "^18.2.0",
+    "typescript": "^5.0.2"
+  }
+}
