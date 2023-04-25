@@ -19,8 +19,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@amatias/eslint-config-ts": "workspace:*",
     "@amatias/eslint-config-jsx": "workspace:*",
+    "@amatias/eslint-config-ts": "workspace:*",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
