@@ -1,6 +1,6 @@
 {
   "name": "@amatias/eslint-config-monorepo",
-  "version": "0.0.3-beta.0",
+  "version": "0.0.3-beta.1",
   "private": true,
   "packageManager": "pnpm@7.30.0",
   "description": "",
@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "test": "pnpm -r run test",
     "prepare": "pnpm -r run stub",
+    "tryPublish": "pnpm onlyPublish --dry-run",
     "onlyPublish": "pnpm publish -r",
+    "bumpp": "bumpp",
     "release": "bumpp -r && pnpm onlyPublish"
   },
   "devDependencies": {
@@ -19,9 +21,6 @@
     "eslint": "^8.36.0",
     "rimraf": "^4.4.0",
     "typescript": "^5.0.2"
-  },
-  "publishConfig": {
-    "directory": "packages/*"
   },
   "eslintConfig": {
     "extends": "@amatias/eslint-config-ts"
