@@ -21,7 +21,7 @@
     "typescript": "^5.0.2"
   },
   "publishConfig": {
-    "directory": "packages"
+    "directory": "packages/*"
   },
   "eslintConfig": {
     "extends": "@amatias/eslint-config-ts"
