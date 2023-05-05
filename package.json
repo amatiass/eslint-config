@@ -2,7 +2,7 @@
   "name": "@amatias/eslint-config-monorepo",
   "version": "0.0.3-beta.2",
   "private": true,
-  "description": "",
+  "description": "Personal eslint config",
   "author": "Amatias <amatias@foxmail.com>",
   "license": "MIT",
   "scripts": {
