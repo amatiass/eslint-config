@@ -51,6 +51,13 @@ export async function updatePackageJson(result: PromptResult): Promise<void> {
             addedPackages.push(f)
           })
           break
+        case 'tailwind':
+          (<const>[
+            'eslint-plugin-tailwindcss',
+          ]).forEach((f) => {
+            pkg.devDependencies[f] = pkgJson.devDependencies[f]
+            addedPackages.push(f)
+          })
       }
     })
   }

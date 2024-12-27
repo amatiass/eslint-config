@@ -224,6 +224,15 @@ export interface OptionsUnoCSS extends OptionsOverrides {
   strict?: boolean
 }
 
+export interface OptionsTailwind extends OptionsOverrides {
+  /**
+   * - Only allow classnames from Tailwind CSS and the values from the whitelist.
+   * - Replacing `m-[1.25rem]` by its configuration based classname `m-5`.
+   * @default false
+   */
+  strict?: boolean
+}
+
 export interface OptionsConfig extends OptionsComponentExts, OptionsProjectType {
   /**
    * Enable gitignore support.
@@ -381,7 +390,7 @@ export interface OptionsConfig extends OptionsComponentExts, OptionsProjectType 
   svelte?: boolean
 
   /**
-   * Enable unocss rules.
+   * Enable unocss rules.(conflict with tailwind)
    *
    * Requires installing:
    * - `@unocss/eslint-plugin`
@@ -389,6 +398,14 @@ export interface OptionsConfig extends OptionsComponentExts, OptionsProjectType 
    * @default false
    */
   unocss?: boolean | OptionsUnoCSS
+
+  /**
+   *Disable tailwind rules. (conflict with unocss)
+   *
+   * Requires installing:
+   * - `eslint-plugin-tailwindcss`
+   */
+  tailwind?: boolean | OptionsTailwind
 
   /**
    * Use external formatters to format files.

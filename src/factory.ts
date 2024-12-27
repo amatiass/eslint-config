@@ -92,6 +92,7 @@ export function antfu(
     regexp: enableRegexp = true,
     solid: enableSolid = false,
     svelte: enableSvelte = false,
+    tailwind: enableTailwind = false,
     typescript: enableTypeScript = isPackageExists('typescript'),
     unicorn: enableUnicorn = true,
     unocss: enableUnoCSS = false,
@@ -233,6 +234,13 @@ export function antfu(
     configs.push(unocss({
       ...resolveSubOptions(options, 'unocss'),
       overrides: getOverrides(options, 'unocss'),
+    }))
+  }
+
+  if (enableTailwind) {
+    configs.push(unocss({
+      ...resolveSubOptions(options, 'tailwind'),
+      overrides: getOverrides(options, 'tailwind'),
     }))
   }
 

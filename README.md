@@ -7,7 +7,7 @@
 - Designed to work with TypeScript, JSX, Vue, JSON, YAML, Toml, Markdown, etc. Out-of-box.
 - Opinionated, but [very customizable](#customization)
 - [ESLint Flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new), compose easily!
-- Optional [React](#react), [Svelte](#svelte), [UnoCSS](#unocss), [Astro](#astro), [Solid](#solid) support
+- Optional [React](#react), [Svelte](#svelte), [UnoCSS](#unocss), [Tailwind](#tailwind) [Astro](#astro), [Solid](#solid) support
 - Optional [formatters](#formatters) support for formatting CSS, HTML, XML, etc.
 - **Style principle**: Minimal for reading, stable for diff, consistent
   - Sorted imports, dangling commas
@@ -673,6 +673,25 @@ Running `npx eslint` should prompt you to install the required dependencies, oth
 
 ```bash
 npm i -D @unocss/eslint-plugin
+```
+
+#### Tailwind
+
+To enable Tailwind support, you need to explicitly turn it on:
+
+```js
+// eslint.config.js
+import antfu from '@antfu/eslint-config'
+
+export default antfu({
+  tailwind: true,
+})
+```
+
+Running `npx eslint` should prompt you to install the required dependencies, otherwise, you can install them manually:
+
+```bash
+npm i -D eslint-plugin-tailwindcss
 ```
 
 ### Optional Rules
